@@ -1,15 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="stylesheet" href="styles/styles.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólió Oldal</title>
-</head>
-<body>
-  <h1>Virág Dávid Tanuló Webfejlesztő</h1>
-  <h2>Üdv mindenkinek!</h2>
-  <p>Jelenleg a portfólió munkáim elkészítésén dolgozom. Munkám mellet minden szabadidőmet leköti a tanulás. Augusztus végén lemondással megszűnik a szolgálati jogviszonyom (járási hivatalban dolgozom), így "életbe vágó" lenne minél hamarabb pénzzé tenni, amit megtanulok. Tehát a feladat adott.</p>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script
+      src="https://kit.fontawesome.com/7f9a46eb01.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólió Oldal</title>
+  </head>
+
+  <body class="body">
+    <aside class="aside">
+      <a
+        href="https://www.linkedin.com/feed/"
+        class="aside-links linkedin-link"
+        target="_blank"
+      >
+        <i class="fa-brands fa-linkedin"></i
+      ></a>
+
+      <a
+        href="https://github.com/"
+        class="aside-links github-link"
+        target="_blank"
+      >
+        <i class="fa-brands fa-github"></i
+      ></a>
+    </aside>
+
+    <div class="parallax-wrapper">
+      <div class="content-holder">
+        <div class="content-first-row">
+          <span class="content content-design yellow">Web </span>
+          <span class="content content-design green">Design </span>
+        </div>
+        <div class="content-second-row">
+          <span class="content content-design blue">and </span>
+        </div>
+        <div class="content-third-row">
+          <span class="content content-code gray angle left">&lt</span>
+          <span class="content content-code code-blue">Web</span>
+          <span class="content content-code code-red"> Development</span>
+          <span class="content content-code gray angle right">&gt</span>
+        </div>
+      </div>
+
+      <header class="header">
+        <nav>
+          <ul>
+            <li class="navitem navitem-01">
+              <a class="navlink navlink-01" href="./index.html">Home</a>
+            </li>
+            <li class="navitem navitem-02">
+              <a class="navlink navlink-02" href="./index.html#skills"
+                >Skills</a
+              >
+            </li>
+            <li class="navitem navitem-03">
+              <a class="navlink navlink-03" href="./index.html#projects"
+                >Projects</a
+              >
+            </li>
+            <li class="navitem navitem-04">
+              <a class="navlink navlink-04" href="./index.html#about">About</a>
+            </li>
+            <li class="navitem navitem-05">
+              <a class="navlink navlink-05" href="./index.html#contact"
+                >Contact</a
+              >
+            </li>
+            <span class="hover-animation"></span>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="drawned-background">
+        <img
+          src="./images/WordArtLeft.png"
+          alt="left angle shaped word-cloud in the background"
+          class="background-image angles"
+        />
+        <img
+          src="./images/gears.png"
+          alt="gears in the background"
+          class="background-image gears"
+        />
+        <img
+          src="./images/WordArtRight.png"
+          alt="right angle shaped word-cloud in the background"
+          class="background-image angles"
+        />
+      </div>
+
+      <main class="main">
+        <section>
+          <h1 class="main-heading">David Virag Designer and Developer</h1>
+          <h5>Your website, my mission.</h5>
+          <p>My goal is to design and develop</p>
+        </section>
+
+        <section id="skills" class="section skills">
+          <h2>Skills</h2>
+
+          <h5>Programming languages</h5>
+
+          <div class="logo-field">
+            <div class="logo-holder">
+              <img
+                class="html5-logo logo"
+                src="./images/clipart688026-resized1.png"
+                alt="HTML5 logo"
+              />
+            </div>
+
+            <div class="logo-holder">
+              <img
+                class="css3-logo logo"
+                src="./images/clipart688026-resized1.png"
+                alt="CSS5 logo"
+              />
+            </div>
+
+            <div class="logo-holder">
+              <img
+                class="javascript-logo logo"
+                src="./images/clipart688026-resized1.png"
+                alt="JavaScript logo"
+              />
+            </div>
+
+            <div class="logo-holder">
+              <img
+                class="python-logo logo"
+                src="./images/python-seeklogo.com.svg"
+                alt="Python Logo"
+              />
+            </div>
+          </div>
+
+          <h5>Frameworks and libraries</h5>
+          <div class="logo-field">
+            <div class="logo-holder">
+              <img
+                class="react-logo logo"
+                src="./images/Resized React logo.png"
+                alt="React Logo"
+              />
+            </div>
+
+            <div class="logo-holder">
+              <img
+                class="bootstrap-logo logo"
+                src="./images/pngaaa.com-3801770.png"
+                alt="Bootstrap Logo Illustration"
+              />
+              <img
+                class="bootstrap-logo logo"
+                src="./images/bootstrap-5-logo-png-transparent.png"
+                alt="Bootstrap Logo Text"
+              />
+            </div>
+
+            <div class="logo-holder">
+              <img
+                class="jquery-logo logo"
+                src="./images/Asset 1jQuerry.svg"
+                alt="jQuery Logo"
+              />
+            </div>
+
+            <div class="logo-holder">
+              <img
+                class="nodejs-logo logo"
+                src="./images/Asset 1@4x-1002.svg"
+                alt="NodeJs Logo"
+              />
+            </div>
+            <div class="logo-holder">
+              <img
+                class="django-logo logo"
+                src="./images/django-logo-negative.svg"
+                alt="Django Logo"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section id="projects" class="section projects">
+          <h2>Projects</h2>
+        </section>
+
+        <section id="about" class="section about">
+          <h2>About</h2>
+
+          <div class="headshot-holder">
+            <img
+              src="./images/viber_kép_2021-10-14_10-43-53-450.png"
+              alt="Picture of David Virag"
+              class="colored-headshot"
+            />
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <section id="contact">
+          <h2>Contact</h2>
+
+          <form
+            class="form"
+            action="https://formspree.io/f/xwkyvlpj"
+            method="post"
+          >
+            <label class="label name-label">
+              Your Name:
+              <input
+                class="input input-name"
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                required
+              />
+            </label>
+
+            <label class="label email-label">
+              Your Email:
+              <input
+                class="input input-email"
+                type="email"
+                name="email"
+                placeholder="example@example.com"
+                required
+              />
+            </label>
+
+            <label class="label textarea-label">
+              Your Massage:
+              <textarea
+                class="input textarea"
+                name="massage"
+                placeholder="The place of your massage."
+                required
+              ></textarea>
+            </label>
+
+            <div class="button-holder form-button-holder">
+              <button class="button form-button" type="submit">SUBMIT</button>
+            </div>
+          </form>
+        </section>
+
+        <p class="copyright">David Virag &copy; 2022</p>
+      </footer>
+    </div>
+  </body>
 </html>
