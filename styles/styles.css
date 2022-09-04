@@ -222,7 +222,7 @@ html {
   width: 39.8vw;
 }
 
-.menu-shifter:checked ~ .hamburger-menu-holder {
+.menu-shifter:checked ~ .nav-list .hamburger-menu-holder {
   display: block;
   position: static;
   height: 3.3rem;
@@ -234,28 +234,28 @@ html {
 }
 
 @media screen and (min-width: 800px) {
-  .menu-shifter:checked ~ .hamburger-menu-holder {
+  .menu-shifter:checked ~ .nav-list .hamburger-menu-holder {
     display: none;
   }
 }
 
-.menu-shifter:checked ~ .hamburger-menu-holder .hamburger-menu {
+.menu-shifter:checked ~ .nav-list .hamburger-menu-holder .hamburger-menu {
   transform: scale(0.7);
   margin-left: auto;
   margin-right: auto;
 }
 
-.menu-shifter:checked ~ .hamburger-menu-holder .bar1 {
+.menu-shifter:checked ~ .nav-list .hamburger-menu-holder .bar1 {
   transform: rotate(45deg) translate(8px, 8px);
   background-color: rgba(0, 0, 0, 0.9);
 }
 
-.menu-shifter:checked ~ .hamburger-menu-holder .bar3 {
+.menu-shifter:checked ~ .nav-list .hamburger-menu-holder .bar3 {
   transform: rotate(-45deg) translate(7px, -8px);
   background-color: rgba(0, 0, 0, 0.9);
 }
 
-.menu-shifter:checked ~ .hamburger-menu-holder .bar2 {
+.menu-shifter:checked ~ .nav-list .hamburger-menu-holder .bar2 {
   opacity: 0;
 }
 
@@ -268,7 +268,7 @@ html {
   transition-duration: 0.5s;
 }
 
-.menu-shifter:checked ~ .nav-item {
+.menu-shifter:checked ~ .nav-list .nav-item {
   position: relative;
   cursor: pointer;
   transition-duration: 0.5s;
