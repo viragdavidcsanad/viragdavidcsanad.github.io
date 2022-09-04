@@ -60,56 +60,12 @@ html {
 
 .logolike {
   width: 200px;
-  transform: translate(5rem, 5rem) rotate(-4deg);
+  transform: translate(2rem, 2rem) rotate(-4deg);
   opacity: 0.9;
-}
-
-/*.content {
-  font-size: 3rem;
-  margin-right: 4px;
-  line-height: 3rem;
-}
-
-.content.angle {
-  margin: 0;
-  vertical-align: bottom;
-}
-
-.content.right.angle {
-  margin-left: -8px;
-}
-
-.content-design {
-  font-family: "Rubik Dirt", cursive;
-}
-
-.content-code {
-  font-size: 2.7rem;
-} */
-
-.yellow {
-  color: rgb(207, 182, 23);
-}
-
-.green {
-  color: rgb(90, 161, 69);
-}
-
-.blue {
-  color: rgb(14, 131, 185);
-  font-family: "Irish Grover", cursive;
-}
-
-.gray {
-  color: rgb(155, 155, 155);
 }
 
 .code-blue {
   color: rgb(157, 221, 255);
-}
-
-.code-red {
-  color: rgb(205, 144, 106);
 }
 
 /*DRAWNED BACKGROUND*/
@@ -174,41 +130,149 @@ html {
 
 .header {
   margin-bottom: 20vh;
+  min-height: 17rem;
 }
 
 /*NAVIGATION*/
 
-nav {
-  position: relative;
-  width: 60vw;
+.nav {
+  width: 50vw;
   margin-right: 0;
   margin-left: auto;
+  /*background-color: rgba(0, 0, 0, 0.4);*/
 }
 
-.navitem {
-  display: block;
-  text-align: right;
-}
-
-@media screen and (min-width: 800px) {
-  .navitem {
-    display: inline-block;
+@media screen and (min-width: 550px) {
+  .nav {
+    width: 60vw;
   }
 }
 
-.navlink {
-  display: inline-block;
+@media screen and (min-width: 800px) {
+  .nav {
+    position: relative;
+    width: 75vw;
+  }
+}
+
+.hamburger-menu {
+  position: absolute;
+  top: 5rem;
+  right: 5rem;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  gap: 6px;
+  width: 3rem;
+  height: 2.8rem;
+  color: rgba(255, 255, 255, 0.9);
+  opacity: 0.85;
+  transition-duration: 0.5s;
+  border-radius: 2px;
+}
+
+@media screen and (min-width: 800px) {
+  .hamburger-menu {
+    display: none;
+  }
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: 0.5s;
+}
+
+.menu-shifter {
+  position: absolute;
+  right: 4.3rem;
+  top: 19.3rem;
+  width: 3.8rem;
+  height: 3.8rem;
+  opacity: 0.3;
+  z-index: 5;
+}
+
+@media screen and (min-width: 800px) {
+  .menu-shifter {
+    display: none;
+  }
+}
+
+.menu-shifter:checked {
+  height: 4rem;
+  width: 23.8rem;
+  right: 1rem;
+  top: 0;
+}
+
+.menu-shifter:checked ~ .hamburger-menu {
+  /*position: absolute;*/
+  transform: scale(0.7);
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.menu-shifter:checked ~ .hamburger-menu .bar1 {
+  transform: rotate(45deg) translate(8px, 8px);
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.menu-shifter:checked ~ .hamburger-menu .bar3 {
+  transform: rotate(-45deg) translate(7px, -8px);
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.menu-shifter:checked ~ .hamburger-menu .bar2 {
+  opacity: 0;
+}
+
+.nav-item {
+  display: block;
   text-align: right;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition-duration: 0.5s;
+}
+
+.menu-shifter:checked ~ .nav-item {
+  position: relative;
+  cursor: pointer;
+  transition-duration: 0.5s;
+  overflow: visible;
+  height: 3.3rem;
+  opacity: 1;
+}
+
+@media screen and (min-width: 800px) {
+  .nav-item {
+    display: inline-block;
+    height: auto;
+    opacity: 1;
+  }
+}
+
+.nav-link {
+  display: inline-block;
+  width: 40vw;
+  text-align: center;
   cursor: pointer;
   margin: 0 -2px;
   padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
 }
 
-@media screen and  (min-width: 800px) {
-  .navlink {
+@media screen and (min-width: 800px) {
+  .nav-link {
     text-align: center;
     padding: 3rem 0 8rem;
-    width: 12vw;
+    width: 13vw;
+    background: 0;
+    /*background-color: rgba(0, 0, 0, 0.2);*/
   }
 }
 
@@ -227,28 +291,26 @@ nav {
     transition: 0.7s;
   }
 
-  .navitem:hover ~ .hover-animation {
+  .nav-item:hover ~ .hover-animation {
     opacity: 0.6;
   }
 
-  .navitem-02:hover ~ .hover-animation {
+  .nav-item-02:hover ~ .hover-animation {
     left: 11.85vw;
   }
 
-  .navitem-03:hover ~ .hover-animation {
+  .nav-item-03:hover ~ .hover-animation {
     left: calc(11.85vw * 2);
   }
 
-  .navitem-04:hover ~ .hover-animation {
+  .nav-item-04:hover ~ .hover-animation {
     left: calc(11.85vw * 3);
   }
 
-  .navitem-05:hover ~ .hover-animation {
+  .nav-item-05:hover ~ .hover-animation {
     left: calc(11.85vw * 4);
   }
 }
-
-
 
 /*==PARAMETERS OF THE FONTS AND THE TEXTS==*/
 
