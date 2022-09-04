@@ -416,7 +416,7 @@ a {
 
 .logo-field {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 2rem;
 }
@@ -549,6 +549,10 @@ a {
 }
 
 /*==ABOUT==*/
+
+.about {
+  margin-left: 16rem;
+}
 
 /*HEADSHOT*/
 
