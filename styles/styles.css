@@ -161,6 +161,7 @@ html {
   position: absolute;
   top: 5rem;
   right: 5rem;
+  transition: 0.5s;
 }
 
 @media screen and (min-width: 800px) {
@@ -496,6 +497,7 @@ a {
 /*HEADSHOT*/
 
 .headshot-holder {
+  float: right;
   margin-top: 4rem;
   position: relative;
   width: 110px;
