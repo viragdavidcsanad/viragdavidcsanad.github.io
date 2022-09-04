@@ -309,7 +309,7 @@ html {
 @media screen and (min-width: 800px) {
   .hover-animation {
     position: absolute;
-    width: 11.85vw;
+    width: 12.8vw;
     height: 100%;
     z-index: -5;
     left: 0;
@@ -326,19 +326,19 @@ html {
   }
 
   .nav-item-02:hover ~ .hover-animation {
-    left: 11.85vw;
+    left: 12.85vw;
   }
 
   .nav-item-03:hover ~ .hover-animation {
-    left: calc(11.85vw * 2);
+    left: calc(12.85vw * 2);
   }
 
   .nav-item-04:hover ~ .hover-animation {
-    left: calc(11.85vw * 3);
+    left: calc(12.85vw * 3);
   }
 
   .nav-item-05:hover ~ .hover-animation {
-    left: calc(11.85vw * 4);
+    left: calc(12.85vw * 4);
   }
 }
 
@@ -563,6 +563,7 @@ a {
   border: 1px outset rgba(255, 255, 255, 0.6);
   z-index: 5;
   box-shadow: 5px 3px 15px rgba(0, 0, 0, 0.7);
+  margin: 3rem;
 }
 
 .colored-headshot {
